@@ -1,9 +1,10 @@
-:~  title+'cyclops'
-    info+'fixme'
-    color+0xff.4400
-    image+'https://freedom-club.sfo2.digitaloceanspaces.com/props/quartus/long-logo/ab_Quartus-05_only.png'
+:~  title+'Cyclops'
+    info+'Stereogram-ify websites'
+    color+0xd2.ad32
     version+[0 0 1]
-    website+'https://dalten.org/'
-    license+'REKT'
-    site+/apps/mine
+    image+''
+    website+''
+    license+'MIT'
+    base+'cyclops'
+    glob-ames+[~zod 0v0]
 ==

@@ -26,19 +26,19 @@
       eng   ~(. +> [bowl ~])
   ++  on-init
     ^-  (quip card _this)
-    ~>  %bout.[0 '%mine +on-init']
+    ~>  %bout.[0 '%cyclops +on-init']
     =^  cards  state
       abet:init:eng
     [cards this]
   ::
   ++  on-save
     ^-  vase
-    ~>  %bout.[0 '%mine +on-save']
+    ~>  %bout.[0 '%cyclops +on-save']
     !>(state)
   ::
   ++  on-load
     |=  ole=vase
-    ~>  %bout.[0 '%mine +on-load']
+    ~>  %bout.[0 '%cyclops +on-load']
     ^-  (quip card _this)
     =^  cards  state
       abet:(load:eng ole)
@@ -46,40 +46,40 @@
   ::
   ++  on-poke
     |=  [mar=mark vaz=vase]
-    ~>  %bout.[0 '%mine +on-poke']
+    ~>  %bout.[0 '%cyclops +on-poke']
     ^-  (quip card _this)
     `this
   ::
   ++  on-peek
     |=  =path
-    ~>  %bout.[0 '%mine +on-peek']
+    ~>  %bout.[0 '%cyclops +on-peek']
     ^-  (unit (unit cage))
     [~ ~]
   ::
   ++  on-agent
     |=  [wir=wire sig=sign:agent:gall]
-    ~>  %bout.[0 '%mine +on-agent']
+    ~>  %bout.[0 '%cyclops +on-agent']
     ^-  (quip card _this)
     `this
   ::
   ++  on-arvo
     |=  [wir=wire sig=sign-arvo]
-    ~>  %bout.[0 '%mine +on-arvo']
+    ~>  %bout.[0 '%cyclops +on-arvo']
     ^-  (quip card _this)
     `this
   ::
   ++  on-watch
   |=  =path
-  ~>  %bout.[0 '%mine +on-watch']
+  ~>  %bout.[0 '%cyclops +on-watch']
   ^-  (quip card _this)
   `this
   ::
   ++  on-fail
-    ~>  %bout.[0 '%mine +on-fail']
+    ~>  %bout.[0 '%cyclops +on-fail']
     on-fail:def
   ::
   ++  on-leave
-    ~>  %bout.[0 '%mine +on-init']
+    ~>  %bout.[0 '%cyclops +on-init']
     on-leave:def
   --
 |_  [bol=bowl:gall dek=(list card)]
